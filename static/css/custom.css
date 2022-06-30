@@ -1,8 +1,4 @@
-/*
-:root {
-	--bg-url: url(file://localhost/F:/OneDrive/1_BlueLeaf/Docs/assets/bg_wow.jpg);
-}
-*/
+
 @font-face {
     font-family: "Noto Sans SC";
     font-weight: normal;
@@ -19,7 +15,6 @@ body {
 
 /*
   >>> BEGIN: #kanban view
-  inspired by https://github.com/cannibalox/logtools
 */
 /* layout */
 [data-refs-self*='kanban'] > .block-children-container > .block-children {
@@ -128,25 +123,4 @@ body {
 }
 /*
   <<<< END: #kanban view
-*/
-
-/* css for LogTool Kanban */
-/*
-[data-refs-self*="kanban"]>.block-children-container.flex>.block-children.w-full>.ls-block {
-    border: 1px solid #e8eaec;
-    background-color: #f6fafe;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-}
-[data-refs-self*="kanban"]>.block-children-container.flex>.block-children>.ls-block:last-child {
-    margin-bottom: 0;
-}
-[data-refs-self*="kanban"]>.block-children-container.flex>.block-children.w-full > .ls-block > .flex.flex-row {
-    background: #e4e2e1;
-    padding: 4px 0px;
-    border-bottom: 1px solid #d3d0ce;
-}
-[data-refs-self*="kanban"]>.block-children-container.flex>.block-children.w-full > .ls-block > .flex.flex-row .inline,
-[data-refs-self*="kanban"]>.block-children-container.flex>.block-children.w-full > .ls-block > .flex.flex-row .inline .page-ref {
-    font-weight: bold;
-}
 */
