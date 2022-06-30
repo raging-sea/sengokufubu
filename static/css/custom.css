@@ -1,0 +1,152 @@
+/*
+:root {
+	--bg-url: url(file://localhost/F:/OneDrive/1_BlueLeaf/Docs/assets/bg_wow.jpg);
+}
+*/
+@font-face {
+    font-family: "Noto Sans SC";
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    src: local("Noto Sans SC");
+  }
+
+html,
+body {
+  font-size: 14px;
+  font-family: 'Noto Sans SC','Fira Sans', sans-serif;
+}
+
+/*
+  >>> BEGIN: #kanban view
+  inspired by https://github.com/cannibalox/logtools
+*/
+/* layout */
+[data-refs-self*='kanban'] > .block-children-container > .block-children {
+    display: inline-flex;
+    position: relative;
+    margin: 0 10px;
+    border: 0;
+    overflow-x: auto;
+}
+/* column */
+[data-refs-self*='kanban']
+    > .block-children-container
+    > .block-children
+    > .ls-block {
+    display: inline-block;
+    padding: 0;
+    width: inherit;
+    min-width: 600px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: var(--ls-tertiary-background-color);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+/* header */
+[data-refs-self*='kanban']
+    > .block-children-container
+    > .block-children
+    > .ls-block
+    > .flex-row {
+    background-color: var(--ls-secondary-background-color);
+    border-bottom: 1px solid var(--border);
+    padding: 4px 6px;
+}
+[data-refs-self*='kanban']
+    > .block-children-container
+    > .block-children
+    > .ls-block
+    > .flex-row
+    > .block-content-wrapper {
+    width: 100%;
+}
+[data-refs-self*='kanban']
+    > .block-children-container
+    > .block-children
+    > .ls-block
+    > .flex-row
+    > .block-content-wrapper
+    > .flex {
+    overflow: hidden;
+}
+[data-refs-self*='kanban']
+    > .block-children-container
+    > .block-children
+    > .ls-block
+    > .flex-row
+    .inline,
+[data-refs-self*='kanban']
+    > .block-children-container
+    > .block-children
+    > .ls-block
+    > .flex-row
+    .inline
+    .page-ref {
+    font-weight: bold;
+}
+[data-refs-self*='kanban'] .todo-master-progress-bar {
+    max-width: 90%;
+}
+/* content */
+[data-refs-self*='kanban']
+    > .block-children-container
+    > .block-children
+    > .ls-block
+    > .block-children-container {
+    margin: 0 !important;
+}
+[data-refs-self*='kanban']
+    > .block-children-container
+    > .block-children
+    > .ls-block::before {
+    display: none;
+}
+[data-refs-self*='kanban']
+    > .block-children-container
+    > .block-children
+    > .ls-block:last-child {
+    margin-bottom: 0;
+}
+[data-refs-self*='kanban']
+    > .block-children-container
+    > .block-children
+    > .ls-block
+    > .flex-row
+    > .mr-1 {
+    display: none;
+}
+[data-refs-self*='kanban']
+    > .block-children-container
+    > .block-children
+    > .ls-block
+    > .block-children-container
+    > .block-children {
+    padding: 10px 0;
+    border: 0;
+}
+/*
+  <<<< END: #kanban view
+*/
+
+/* css for LogTool Kanban */
+/*
+[data-refs-self*="kanban"]>.block-children-container.flex>.block-children.w-full>.ls-block {
+    border: 1px solid #e8eaec;
+    background-color: #f6fafe;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+[data-refs-self*="kanban"]>.block-children-container.flex>.block-children>.ls-block:last-child {
+    margin-bottom: 0;
+}
+[data-refs-self*="kanban"]>.block-children-container.flex>.block-children.w-full > .ls-block > .flex.flex-row {
+    background: #e4e2e1;
+    padding: 4px 0px;
+    border-bottom: 1px solid #d3d0ce;
+}
+[data-refs-self*="kanban"]>.block-children-container.flex>.block-children.w-full > .ls-block > .flex.flex-row .inline,
+[data-refs-self*="kanban"]>.block-children-container.flex>.block-children.w-full > .ls-block > .flex.flex-row .inline .page-ref {
+    font-weight: bold;
+}
+*/
