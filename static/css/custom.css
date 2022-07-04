@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: "Noto Sans SC";
     font-weight: normal;
@@ -9,9 +8,23 @@
 
 html,
 body {
-  font-size: 15px;
+  font-size: 14px;
   font-family: 'Noto Sans SC','Fira Sans', sans-serif;
 }
+
+.is-paragraph {
+	font-size: 14px
+}
+
+thead th {
+    font-size: 12px;
+}
+
+table th,
+table td {
+  font-size: 13px;
+}
+
 
 /*
   >>> BEGIN: #kanban view
@@ -32,7 +45,7 @@ body {
     display: inline-block;
     padding: 0;
     width: inherit;
-    min-width: 600px;
+    min-width: 400px;
     margin-right: 10px;
     border-radius: 4px;
     background-color: var(--ls-tertiary-background-color);
