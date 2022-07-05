@@ -45,7 +45,7 @@ table td {
     display: inline-block;
     padding: 0;
     width: inherit;
-    min-width: 200px;
+    min-width: 300px;
     margin-right: 10px;
     border-radius: 4px;
     background-color: var(--ls-tertiary-background-color);
